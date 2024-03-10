@@ -63,17 +63,9 @@ export function PHOTO_GET(id: string) {
 	};
 }
 
-export function COMMENT_POST(id, body) {
+export function COMMENT_POST(id: string) {
 	return {
 		url: `${API_URL}/api/comment/${id}`,
-		options: {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-				Authorization: `Bearer ${window.localStorage.getItem("token")}`,
-			},
-			body: JSON.stringify(body),
-		},
 	};
 }
 
@@ -92,13 +84,6 @@ export function PASSWORD_LOST() {
 export function PASSWORD_RESET() {
 	return {
 		url: `${API_URL}/api/password/reset`,
-		// options: {
-		// 	method: "POST",
-		// 	headers: {
-		// 		"Content-Type": "application/json",
-		// 	},
-		// 	body: JSON.stringify(body),
-		// },
 	};
 }
 

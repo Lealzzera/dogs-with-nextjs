@@ -1,4 +1,4 @@
-export default async function FeedIcon() {
+export default function FeedIcon() {
 	return (
 		<svg
 			width='28'

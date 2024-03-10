@@ -1,4 +1,4 @@
-export default async function EstatisticasIcon() {
+export default function EstatisticasIcon() {
 	return (
 		<svg
 			width='28'

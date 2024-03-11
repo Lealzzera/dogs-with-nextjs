@@ -18,7 +18,6 @@ export async function generateMetadata({ params }: PhotoIdParams) {
 
 export default async function FotoIdPage({ params }: PhotoIdParams) {
 	const { data } = await photoGet(params.id);
-	console.log(data);
 	if (!data) return notFound();
 	return (
 		<section className='container mainContainer'>
